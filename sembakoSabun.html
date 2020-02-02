@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" type="image/png" href="gambar/ewarung.png"/>
+
+  <title>SembakoSabun</title>
+<style>
+/* DASAR DASAR */
+table, th, td {
+   border-radius:10px ;
+	 border: 0px solid black; background-color: #00CED1;
+    border-collapse: collapse;
+    padding: 0px 40px 1px 40px;
+    text-align: center;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;}
+.img-bulat {
+  border: 1px solid black;
+  padding: 1px;
+  border-collapse: collapse;
+  border-radius: 10%;
+  position: center;}
+.img-kecil {
+  border: 0px solid black;
+  padding: 0px;
+  border-collapse: collapse;
+  border-radius: 10%;
+  position: center;}
+
+body {background-color: #00CED1;
+  font-family: arial, verdana, sans-serif;
+        border:2px black;}
+h2 {text-align: center;
+      color: red}
+img {border-radius: 5px 5px 15px 15px;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    top: 0px;}
+a {font-size: 4}
+p {position: absolute;
+    top: 10px;
+    left: 40%;
+    z-index: 5;
+    color: solid black;
+    font-size: 7;
+    font-family: "tahoma";}
+tr {height:80px}
+th{height:40}
+/* BOTTON BOTTON */
+.myButton {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background:linear-gradient(to bottom, #FFD700 5%, #DC143C 100%);
+  background-color:#DC143C;
+  border-radius:5px;
+  border:1px solid #337bc4;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:5px 5px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #528ecc;}
+.myButton:hover {
+  background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color:#378de5;}
+.myButton:active {
+  position:relative;
+  top:1px;}
+/* POP UP  POP UP */
+/* jwpopup box style */
+.jwpopup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 110px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+.jwpopup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.jwpopup-head {
+  font-size: 11px;
+    padding: 1px 16px;
+    color: white;
+    background: #006faa; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#006faa, #002c44); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#006faa, #002c44); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#006faa, #002c44); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#006faa, #002c44); /* Standard syntax */
+}
+.jwpopup-main {padding: 20px 50px }
+
+/* tambahkan efek animasi */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* style untuk tombol close */
+.close {
+  margin-top: 7px;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;}
+.close:hover, .close:focus {
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;}
+
+/* POP1 UP  POP1 UP */
+/* jwpopup1 box style */
+.jwpopup1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 110px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+.jwpopup1-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.jwpopup1-head {
+    font-size: 11px;
+    padding: 1px 16px;
+    color: white;
+    background: #006faa; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#006faa, #002c44); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#006faa, #002c44); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#006faa, #002c44); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#006faa, #002c44); /* Standard syntax */
+}
+.jwpopup1-main {padding: 20px 50px }
+
+/* tambahkan efek animasi */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* style untuk tombol close */
+.close1 {
+  margin-top: 7px;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;}
+.close1:hover, .close1:focus {
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;}
+
+
+</style>
+</head>
+<body>
+    <img src="sembako/gudang sembako.jpg" width="100%">
+<table style="" text-align="center" cellpadding="1" ;="" border="0" width="100%" height="70px">
+    <tbody><tr>
+      <th><a href="e-warung.html" class="myButton">KEMBALI</a></th><th></th><th></th>
+      <th><a href="https://api.whatsapp.com/send?phone=6281270255590&amp;text=s.2580" class="myButton">CEK SALDO</a></th>
+    </tr>
+
+    <tr>
+      <th colspan="2"><a href="sembako.html" ><img class="img-bulat" src="sembako/fortun.jpg" height="75px" width="80"> </th>
+        <th>  </th>
+         
+    </tr>
+    <tr><th colspan="2"><a> SEMBAKO</a></th><th colspan="2"><a> </a></th></tr>
+
+    <tr>
+        <th colspan="2"><a href="sabun.html" > <img class="img-bulat" src="sabun/lux.jpg" height="75px" width="80"> </th>
+        <th colspan="2"> <a href="ditergent.html" ><img class="img-bulat" src="pembersih/rinsoantinoda.jpg" height="75px" width="80"> </th>
+         
+    </tr><tr>
+      <th colspan="2"><a> SABUN SAMPHO</a></th><th colspan="2"><a>DITERGENT</a></th></tr>
+
+
+
+</tbody></table></body></html>
